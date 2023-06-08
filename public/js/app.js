@@ -1,13 +1,12 @@
+// *applet l'input dans la partie 1
 let input1 = document.querySelector(".input1");
-
+// *appeler le boutton
 let buttonList = document.querySelector(".lister");
-
+// *applet la balise ul
 let all_list = document.querySelector(".all-list");
 
-
-
-
-
+// *la function qui vas verifier si l'input est vide 
+// *si il n'a pas vide il vas ajouter l'input.value dans une liste
 
 const ajouterText = () =>{
     if (input1.value == "") {
@@ -23,27 +22,9 @@ const ajouterText = () =>{
     };
 }
 
-
-// const true_selection = () =>{
-
-// for (let index = 0; index < valide.length; index++) {
-//     let element = valide[index];
-//     console.log(element);
-//     element.addEventListener("click" , ()=>{
-//         for (let index = 0; index < selection.length; index++) {
-//             let element = selection[index];
-//             element.classList.toggle("li-style-green")
-//         }
-//     })
-
-// }
-
-// }
-// true_selection()
+// !les tableau qui  vas prendre la case selected ou not selected
 tab_green = [];
 tab_red = [];
-
-
 
 document.addEventListener("click", e => {
     if(e.target.className.includes("valide")){
@@ -52,31 +33,18 @@ document.addEventListener("click", e => {
     }
 })
 
-
 document.addEventListener("click", f => {
     if(f.target.className.includes("delete")){
         f.target.parentElement.parentElement.classList.toggle("li-style-red");
         tab_red.push(f.target.parentElement.previousElementSibling.textContent)
-       
     }
-    
 })
+
 document.addEventListener("click", a => {
     if(a.target.className.includes("modifie")){
         let askmodifie = prompt("qu'est ce tu veux modifier ")
         a.target.parentElement.previousElementSibling.textContent = askmodifie
     }
 })
-
-
-
-
-
-
-
-
-
-
-
 
 buttonList.addEventListener("click" , ajouterText);
