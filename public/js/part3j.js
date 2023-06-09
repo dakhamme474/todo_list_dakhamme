@@ -50,18 +50,18 @@ const dragItems = () => {
         }
     };
 }
-document.addEventListener("click" , b => {
-if (b.target.className.includes("pencel")) {
-    let askchange = prompt("what's the change")
-    b.target.previousElementSibling.textContent = askchange
-}
-})
-document.addEventListener("click" , c => {
-if (c.target.className.includes("remove")) {
-    c.target.previousElementSibling.previousElementSibling.classList.add("part-3-close-i")
-}
-})
+
     
+document.addEventListener("click", (z) => {
+    if (z.target.className.includes("pencel")) {
+        let askChange = prompt("What's the change?");
+        z.target.previousElementSibling.textContent = askChange;
+    }
+
+    if (z.target.className.includes("remove")) {
+        z.target.parentElement.remove();
+    }
+});
     
 
 
