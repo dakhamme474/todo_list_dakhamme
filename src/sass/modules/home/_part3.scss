@@ -63,8 +63,28 @@ h2{
             padding: 6px;
             margin: 10px 0;
             color: white;
+            display: flex;
+            justify-content: center;
             // border-radius: 15px;
             cursor: move;
+            
         }
     }
 }
+.pencel{
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+cursor: pointer;
+}
+.remove{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    cursor: pointer;
+}
+.items.part-3-close-i{
+    display: none;
+}
+

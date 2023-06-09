@@ -10730,6 +10730,28 @@ textarea.form-control-lg {
   font-family: xregular;
 }
 
+#menu-pages {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.63);
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  gap: 35px;
+}
+#menu-pages .go-1 {
+  color: cornflowerblue;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px;
+}
+#menu-pages .go-1:hover {
+  border-bottom: 2px solid;
+  background-color: rgba(100, 148, 237, 0.413);
+  color: rgba(0, 0, 0, 0.63);
+  border-radius: 10px;
+}
+
 .btn-3 {
   background-image: url(../img/Project-Managment-final.png);
   background-size: cover;
@@ -10911,7 +10933,28 @@ h2, .h2 {
   padding: 6px;
   margin: 10px 0;
   color: white;
+  display: flex;
+  justify-content: center;
   cursor: move;
+}
+
+.pencel {
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.remove {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.items.part-3-close-i {
+  display: none;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -9,7 +9,7 @@ const items_add = () => {
     if (inp.value == "") {
         alert("Veuillez remplir le champ");
     } else {
-        boxes[0].innerHTML += `<p class="items" draggable="true">${inp.value}</p>`;
+        boxes[0].innerHTML += `<div class="items" draggable="true"><p >${inp.value}</p><i class="fa-solid fa-pen fa-large pencel"></i> <i class="fa-solid fa-xmark fa-xl remove" style="color: #ff0000;"></i></div>`;
         inp.value = "";
     }
     dragItems();
@@ -48,6 +48,20 @@ const dragItems = () => {
                 box.style.color = "black";
             });
         }
-    }
-};
+    };
+}
+document.addEventListener("click" , b => {
+if (b.target.className.includes("pencel")) {
+    let askchange = prompt("what's the change")
+    b.target.previousElementSibling.textContent = askchange
+}
+})
+document.addEventListener("click" , c => {
+if (c.target.className.includes("remove")) {
+    c.target.previousElementSibling.previousElementSibling.classList.add("part-3-close-i")
+}
+})
+    
+    
+
 
