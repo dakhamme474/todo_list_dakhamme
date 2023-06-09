@@ -50,28 +50,7 @@ document.addEventListener("click", a => {
 buttonList.addEventListener("click" , ajouterText);
 
 
-// ---------------------------------part3-------------------------------------
-
-let inp = document.getElementById("input");
-// let btn = document.getElementById("btn");
-// let boxes = document.querySelectorAll(".box");
 
 
-// btn.onclick = function () {
-//     if (inp.value == "") {
-//                 alert("veuiller remplir le champ")
-//             }else{
-//                 boxes[0].innerHTML += `<p class="items" draggable="true">${inp.value}</p>`
-//             }
-// }
 
 
-// const items_add = () =>{
-//     if (inp.value == "") {
-//         alert("veuiller remplir le champ")
-//     }else{
-//         boxes[0].innerHTML += `<p class="items" draggable="true">${inp.value}</p>`
-//     }
-//     }
-
-// btn.addEventListener("click" , items_add);
