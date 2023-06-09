@@ -1,3 +1,7 @@
+*{margin: 0;
+padding: 0;
+font-family: xregular;
+}
 .btn-3{
     background-image: url(../img/Project-Managment-final.png);
     background-size: cover;
@@ -5,6 +9,10 @@
     object-position: center;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
 }
 .all-btn{
     display: flex;
